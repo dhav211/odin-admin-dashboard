@@ -5,6 +5,314 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="styles.css" />
+    <script type="text/javascript" src="script.js""></script>
   </head>
-  <body></body>
+  <body>
+    <div id="container">
+      <div class="linkbar">
+        <div id="linkbar-top">
+          <div class="logo">
+            <img src="images/view-dashboard.png" alt="logo" />
+            <h2>Dashboard</h2>
+          </div>
+          <button onclick="openLinkBar()">
+              <img src="images/menu.svg" alt="menu icon" id="hamburger" />
+          </button>
+        </div>
+        <nav class="links">
+          <ul>
+            <li class="linkbar-link">
+              <img src="images/home.svg" alt="home icon" class="icon-size" />
+              <a href="">Home</a>
+            </li>
+            <li class="linkbar-link">
+              <img
+                src="images/account.svg"
+                alt="profile icon"
+                class="icon-size"
+              />
+              <a href="">Profile</a>
+            </li>
+            <li class="linkbar-link">
+              <img
+                src="images/message.svg"
+                alt="messages icon"
+                class="icon-size"
+              />
+              <a href="">Messages</a>
+            </li>
+            <li class="linkbar-link">
+              <img
+                src="images/clock-outline.svg"
+                alt="history icon"
+                class="icon-size"
+              />
+              <a href="">History</a>
+            </li>
+            <li class="linkbar-link">
+              <img
+                src="images/note-multiple-outline.svg"
+                alt="tasks icon"
+                class="icon-size"
+              />
+              <a href="">Tasks</a>
+            </li>
+            <li class="linkbar-link">
+              <img
+                src="images/account-group.svg"
+                alt="communties icon"
+                class="icon-size"
+              />
+              <a href="">Communities</a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="links">
+          <ul>
+            <li class="linkbar-link">
+              <img src="images/cog.svg" alt="settings icon" class="icon-size" />
+              <a href="">Settings</a>
+            </li>
+            <li class="linkbar-link">
+              <img
+                src="images/help-box-outline.svg"
+                alt="support icon"
+                class="icon-size"
+              />
+              <a href="">Support</a>
+            </li>
+            <li class="linkbar-link">
+              <img
+                src="images/shield-check-outline.svg"
+                alt="privacy icon"
+                class="icon-size"
+              />
+              <a href="">Privacy</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <header>
+        <div id="top">
+          <form action="search" method="get">
+            <label for="search">
+              <img
+                src="images/magnify.svg"
+                alt="search icon"
+                class="icon-size"
+              />
+            </label>
+            <input type="text" name="search" id="searchbar" />
+          </form>
+          <div class="user-info-area">
+            <img
+              src="images/bell-ring-outline.svg"
+              alt="alert icon"
+              class="icon-size"
+            />
+            <img
+              src="images/cute-white-cat-paws-up-wall-cartoon_42750-785.avif"
+              alt="user avatar"
+              class="small-circle-avatar"
+            />
+            <p>Jimmy Shoux</p>
+          </div>
+        </div>
+        <div id="bottom">
+          <div id="user-welcome">
+            <img
+              src="images/cute-white-cat-paws-up-wall-cartoon_42750-785.avif"
+              alt="user avatar"
+              class="large-circle-avatar"
+            />
+            <div>
+              <p>Hi there,</p>
+              <h2>Jimmy Shoux (@jshoux)</h2>
+            </div>
+          </div>
+          <div id="actions">
+            <button>New</button>
+            <button>Upload</button>
+            <button>Share</button>
+          </div>
+        </div>
+      </header>
+      <div class="content">
+        <div id="information">
+          <div>
+            <h3>Announcements</h3>
+            <div id="info-card">
+              <div class="news-update">
+                <h4>Site Maintenance</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+              </div>
+              <hr />
+              <div class="news-update">
+                <h4>Communnity Share Day</h4>
+                <p>
+                  Illum vitae velit ipsa iste reprehenderit repellendus cum nam
+                </p>
+              </div>
+              <hr />
+              <div class="news-update">
+                <h4>Updated Privacy Policy</h4>
+                <p>
+                  Ducimus libero laborum ullam deleniti, corrupti tempora odio
+                </p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h3>Trending</h3>
+            <div id="trending-card">
+              <div class="trending-user">
+                <img
+                  src="images/kisspng-t-shirt-cat-hoodie-pug-dab-animated-dog-5b46e87483dda8.3765738815313736845401.jpg"
+                  alt="avatar"
+                  class="small-circle-avatar"
+                />
+                <div class="trending-user-details">
+                  <p class="trending-username">@KrazyKitty</p>
+                  <p class="trending-project">Cat Portal</p>
+                </div>
+              </div>
+              <div class="trending-user">
+                <img
+                  src="images/pngtree-gray-cartoon-cat-cat-cartoon-animals-gray-png-image_482709.jpg"
+                  alt="avatar"
+                  class="small-circle-avatar"
+                />
+                <div class="trending-user-details">
+                  <p class="trending-username">@Sleepyface</p>
+                  <p class="trending-project">Cat Naps</p>
+                </div>
+              </div>
+              <div class="trending-user">
+                <img
+                  src="images/Comic-Cartoon-Cat-Sticker-7-Graphics-18955107-2-312x208.jpg"
+                  alt="avatar"
+                  class="small-circle-avatar"
+                />
+                <div class="trending-user-details">
+                  <p class="trending-username">@DaCat</p>
+                  <p class="trending-project">Super Cool Cat App</p>
+                </div>
+              </div>
+              <div class="trending-user">
+                <img
+                  src="images/48-480523_cute-cartoon-cats-cute-cartoon-cat-png.jpg"
+                  alt="avatar"
+                  class="small-circle-avatar"
+                />
+                <div class="trending-user-details">
+                  <p class="trending-username">@wowzerz</p>
+                  <p class="trending-project">WOW!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h3 id="projects-header">Your Projects</h3>
+          <div id="projects">
+            <div class="project-card">
+              <h4>Super Cool Project</h4>
+              <p>
+                The song came from the bathroom belting over the sound of the
+                shower's running water. It was the same way each day began since
+                he could remember. It listened intently and concluded that the
+                singing today was as terrible as it had ever been.
+              </p>
+              <div class="project-actions">
+                <img src="images/star-plus-outline.svg" alt="star" />
+                <img src="images/eye-plus-outline.svg" alt="view" />
+                <img src="images/source-fork.svg" alt="fork" />
+              </div>
+            </div>
+            <div class="project-card">
+              <h4>Less Cool Project</h4>
+              <p>
+                She reached her goal, exhausted. Even more chilling to her was
+                that the euphoria that she thought she'd feel upon reaching it
+                wasn't there. Something wasn't right. Was this the only feeling
+                she'd have for over five years of hard work?
+              </p>
+              <div class="project-actions">
+                <img src="images/star-plus-outline.svg" alt="star" />
+                <img src="images/eye-plus-outline.svg" alt="view" />
+                <img src="images/source-fork.svg" alt="fork" />
+              </div>
+            </div>
+            <div class="project-card">
+              <h4>Money Loser</h4>
+              <p>
+                It was their first date and she had been looking forward to it
+                the entire week. She had her eyes on him for months, and it had
+                taken a convoluted scheme with several friends to make it
+                happen, but he'd finally taken the hint and asked her out. After
+                all the time and effort she'd invested into it, she never
+                thought that it would be anything but wonderful. It goes without
+                saying that things didn't work out quite as she expected.
+              </p>
+              <div class="project-actions">
+                <img src="images/star-plus-outline.svg" alt="star" />
+                <img src="images/eye-plus-outline.svg" alt="view" />
+                <img src="images/source-fork.svg" alt="fork" />
+              </div>
+            </div>
+            <div class="project-card">
+              <h4>Impossible App</h4>
+              <p>
+                Green vines attached to the trunk of the tree had wound
+                themselves toward the top of the canopy. Ants used the vine as
+                their private highway, avoiding all the creases and crags of the
+                bark, to freely move at top speed from top to bottom or bottom
+                to top depending on their current chore. At least this was the
+                way it was supposed to be. Something had damaged the vine
+                overnight halfway up the tree leaving a gap in the once pristine
+                ant highway.
+              </p>
+              <div class="project-actions">
+                <img src="images/star-plus-outline.svg" alt="star" />
+                <img src="images/eye-plus-outline.svg" alt="view" />
+                <img src="images/source-fork.svg" alt="fork" />
+              </div>
+            </div>
+            <div class="project-card">
+              <h4>Easy Peasy App</h4>
+              <p>
+                Stormi is a dog. She is dark grey and has long legs. Her eyes
+                are expressive and are able to let her humans know what she is
+                thinking. Her tongue is long, pink, and wet. Her long legs allow
+                her to sprint after other dogs, people or bunnies. She can be a
+                good dog, but also very bad. Her tail wags when happy or excited
+                and hides between her back legs when she is bad. Stormi is a dog
+                I love.
+              </p>
+              <div class="project-actions">
+                <img src="images/star-plus-outline.svg" alt="star" />
+                <img src="images/eye-plus-outline.svg" alt="view" />
+                <img src="images/source-fork.svg" alt="fork" />
+              </div>
+            </div>
+            <div class="project-card">
+              <h4>Money Maker</h4>
+              <p>
+                Her eyebrows were a shade darker than her hair. They were thick
+                and almost horizontal, emphasizing the depth of her eyes. She
+                was rather handsome than beautiful. Her face was captivating by
+                reason of a certain frankness of expression and a contradictory
+                subtle play of features. Her manner was engaging.
+              </p>
+              <div class="project-actions">
+                <img src="images/star-plus-outline.svg" alt="star" />
+                <img src="images/eye-plus-outline.svg" alt="view" />
+                <img src="images/source-fork.svg" alt="fork" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
